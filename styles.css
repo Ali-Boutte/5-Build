@@ -1,4 +1,4 @@
-/* CSS by Christina Carrasquilla, iteration by */
+/* CSS by Christina Carrasquilla, updated by Ali Boutte */
 
 /* ===== Color Palette ===== 
 
@@ -19,7 +19,7 @@ body {
     color: #e2e8f0;
     min-width:500px;
     display:grid;
-    grid-template-columns:1fr;
+    grid-template-columns:1fr 300px;
 }
 
 header {
@@ -100,6 +100,27 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 1rem;
+}
+@media screen and (min-width:800px){
+   nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; 
+   }
+header,nav,footer {
+    display: grid;
+    grid-column: 1 /-1;
+}
+nav {
+display: flex;
+justify-content: space-around;
+}
+.card-row {
+    display: flex;
+    }
+.card-row section {
+    width: 30%;
+}
 }
 
 /* ===== Media Query (Medium) ===== */
